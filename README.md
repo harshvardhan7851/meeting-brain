@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# 🧠 MeetingBrain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Turn any meeting transcript into instant action — summaries, tasks, decisions, mood analysis & follow-up emails in seconds.
 
-## Available Scripts
+Built in 48 hours at a hackathon using React + Groq AI (LLaMA 3.3 70B).
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🧠 **Smart Summary** — 2-3 sentence overview of any meeting
+- ✅ **Action Items** — Every task automatically extracted
+- ⚡ **Key Decisions** — What was agreed on, crystal clear
+- 😊 **Team Mood Meter** — Sentiment score with visual indicator
+- 📧 **Follow-up Email Draft** — Ready-to-send email in one click
+- 🕐 **Meeting History** — Last 10 meetings saved in browser
+- 📄 **PDF Export** — Download the full report instantly
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js 16+
+- Free Groq API key from [console.groq.com](https://console.groq.com)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/meeting-brain
+cd meeting-brain
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Create your .env file
+echo "REACT_APP_GROQ_KEY=your_groq_key_here" > .env
 
-### `npm run eject`
+# Start the app
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Open [http://localhost:3000](http://localhost:3000) to use the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend UI |
+| Groq API (LLaMA 3.3 70B) | AI analysis |
+| jsPDF | PDF export |
+| localStorage | Meeting history |
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💡 How to Use
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Paste your meeting transcript into the input box
+2. Click **⚡ Analyze Meeting**
+3. Get instant summary, action items, decisions, mood score & email draft
+4. Export as PDF or copy the email draft
+5. Access past meetings from the history panel
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🏗️ Project Structure
 
-### Analyzing the Bundle Size
+```
+src/
+├── App.js       # Main app logic + API calls
+├── App.css      # All styles
+└── index.js     # Entry point
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🔑 Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Variable | Description |
+|---|---|
+| `REACT_APP_GROQ_KEY` | Your Groq API key |
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📸 Demo
 
-### Deployment
+Paste this sample transcript to try it out:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+Alex (PM): Good morning everyone. Let's start Q4 planning.
+Priya (Design): I've completed user research. 60% of users drop off at onboarding step 3.
+Alex: That's a big problem. We need to fix that before the next release.
+Priya: I can redesign onboarding by next Wednesday.
+Alex: Approved. Raj, how long to implement?
+Raj (Dev): 3 days after designs are ready.
+Alex: Perfect. Beta launch confirmed for November 15th.
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🙏 Acknowledgements
+
+- [Groq](https://groq.com) for the blazing fast free LLM API
+- [Meta](https://ai.meta.com) for the LLaMA 3.3 model
+- Built with ❤️ at a hackathon
+
+---
+
+## 📄 License
+
+MIT
